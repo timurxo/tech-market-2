@@ -1,0 +1,44 @@
+.logo-img {
+    width: 160px;
+    height: auto;
+}
+
+.logo {
+    margin-top: 1px !important;
+    /* vertical-align: middle !important; */
+}
+
+@media only screen and (max-width: 996px) {
+    .logo {
+        margin-top: 5px !important;
+    }
+
+    .logo-img {
+        width: 140px;
+        height: auto;
+    }
+    
+}
+
+.fa-bars {
+    font-size: 23px !important;
+}
+
+.d-inline-block {
+    text-align: center;
+    display: block;
+}
+
+.col {
+    text-align: right;
+    padding-top: 20px;
+    
+}
+
+.d-inline-block {
+    margin-right: 30px;
+}
+
+.nav-drop-item {
+    margin-top: 15px;
+}

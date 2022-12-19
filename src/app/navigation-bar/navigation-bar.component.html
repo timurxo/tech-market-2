@@ -1,0 +1,45 @@
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a [routerLink]="['/']" href="#" class="logo">
+                        <img class="logo-img" src="assets/images/logo.png" alt="Softy Pinko"/>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+
+                    <ul class="nav" *ngIf="!mobile">
+                        <!-- <li><a href="#welcome">Home</a></li> -->
+                        <li> <a [routerLink]="['/']"> Home </a> </li>
+                        <li> <a [routerLink]="['/products-page']">Products</a></li>
+                        <li> <a [routerLink]="['/price-page']">Get a Quote</a></li>
+                        <li> <a [routerLink]="['/services-page']">Services</a></li>
+                        <li> <a [routerLink]="['/contact-page']"> Contact Us </a> </li>
+                        
+                    </ul>
+                    
+                    <div class="col" *ngIf="mobile">
+                        <div ngbDropdown class="d-inline-block">
+                            <button type="button" class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </button>
+                            
+                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                <button ngbDropdownItem class="nav-drop-item"><a [routerLink]="['/']" style="color: black;">Home </a></button>
+                                <button ngbDropdownItem class="nav-drop-item"><a [routerLink]="['/products-page']" style="color: black;">Products</a></button>
+                                <button ngbDropdownItem class="nav-drop-item"><a [routerLink]="['/price-page']" style="color: black;">Get a Quote</a></button>
+                                <button ngbDropdownItem class="nav-drop-item"><a [routerLink]="['/services-page']" style="color: black;">Services</a></button>
+                                <button ngbDropdownItem class="nav-drop-item"> <a [routerLink]="['/contact-page']" style="color: black;">Contact Us</a> </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </nav>
+                
+            </div>
+        </div>
+    </div>
+
+ 
+</header>
